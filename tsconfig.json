@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "target": "es2017",
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "typeRoots" : ["./node_modules/@types"],
+    "paths": {
+      "@interfaces/*": ["interfaces/*"],
+      "@controllers/*": ["controllers/*"],
+      "@utils/*": ["utils/*"],
+      "@middlewares/*": ["middlewares/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
